@@ -1,0 +1,17 @@
+{
+  "name": "mazozi",
+  "version": "1.0.0",
+  "description": "mazozi.com front end",
+  "main": "index.js",
+  "homepage": "http://www.mazozi.com",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mtcrutch/mazozi.git"
+  },
+  "devDependencies": {
+    "grunt": "0.4.5"
+  }
+}
