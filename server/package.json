@@ -1,0 +1,17 @@
+{
+  "name": "mazozi-server",
+  "version": "1.0.0",
+  "description": "mazozi.com server side",
+  "main": "index.js",
+  "homepage": "http://www.mazozi.com",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mtcrutch/mazozi.git"
+  },
+  "dependencies": {
+    "node-static": "0.7.3"
+  }
+}
