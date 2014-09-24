@@ -1,4 +1,4 @@
-var PORT = process.ENV.PORT || 8080,
+var PORT = 8080,
     http = require('http'),
     nodeStatic = require('node-static'),
     file = new nodeStatic.Server('../client/app');
