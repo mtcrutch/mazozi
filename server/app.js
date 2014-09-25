@@ -1,16 +1,15 @@
-var PORT = 8080,
-    http = require('http'),
-    nodeStatic = require('node-static'),
-    file = new nodeStatic.Server('../client/app');
+var express = require('express'),
+    app = express();
 
-http.createServer(function (request, response) {
+app.set('port', (process.env.PORT || 5000));
+app.use(express['static'](__dirname + '/../client/app'));
 
+app.get('*', function (request, response) {
     'use strict';
+    response.status(404).send('Whoops, nothing here');
+});
 
-    request.addListener('end', function () {
-        file.serve(request, response);
-    }).resume();
-
-}).listen(PORT);
-
-console.info('Starting server on port: %d', PORT);
+app.listen(app.get('port'), function () {
+    'use srtict';
+    console.info('Node app is running at: %d', app.get('port'));
+});
